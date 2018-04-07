@@ -1,21 +1,22 @@
-ABOUT
+##ABOUT
 
 This is a corpus manually annotated tweets for the emotion detection task (using Plutchik’s eight basic emotions) produced as a result of my master thesis.
 
-CORPUS FORMAT
+##CORPUS FORMAT
 
 Corpus consists of {tweet_id: label} pairs.
 
-Tweet_id is an original id of the tweet from Twitter. We can provide only id-s due to Twitter’s policy,  however the way how to get the texts of the tweets will be explained below.
+**Tweet_id** is an original id of the tweet from Twitter. We can provide only id-s due to Twitter’s policy,  however the way how to get the texts of the tweets will be explained below.
 
-Each label represents the emotions in a tweet in form of 8 dimensional vector for 8 emotion types. Each value in a vector is a float number between 0 and 3 representing the presence and intensity of each emotion, where 0 is «absent» and 3 is a «maximum intensity». The emotions in the vector are located in the following order: [anger, disgust, fear, joy, sadness, surprise, anticipation, trust].
+Each **label** represents the emotions in a tweet in form of 8 dimensional vector for 8 emotion types. Each value in a vector is a float number between 0 and 3 representing the presence and intensity of each emotion, where 0 is «absent» and 3 is a «maximum intensity». The emotions in the vector are located in the following order: anger, disgust, fear, joy, sadness, surprise, anticipation, trust.
 
-CORPUS RETRIEVAL
+##CORPUS RETRIEVAL
 
-The labeled_tweets.txt file contains the corpus in human readable form.
+The [labeled_tweets.txt](labeled_tweets.txt) file contains the corpus in human readable form.
 
-The labeled_tweets_dump.txt file contains the corpus in computer readable form. In order to access it, run the following python code:
+The [labeled_tweets_dump.txt](labeled_tweets_dump.txt) file contains the corpus in computer readable form. In order to access it, run the following python code:
 
+```
 import pickle
 
 labeled_tweets = pickle.load(open('labeled_tweets_dump.txt', 'rb'))
@@ -24,11 +25,14 @@ for key in labeled_tweets:
 	tweet_id = key
 	tweet_label = labeled_tweets[key]
 	print(tweet_id, tweet_label)
+	
+```
 
 To get the text of the tweet using its id:
-install tweepy, create an app and get your credentials
-use following code:
+- install tweepy, create an app and get your credentials
+- use following code:
  
+```
 #set up tweepy
 
 import tweepy
@@ -51,3 +55,4 @@ for key in labeled_tweets:
 		print(tweet.text)       
 	except:
 		print(«this tweet does not exist anymore»)
+```
