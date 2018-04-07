@@ -1,6 +1,6 @@
 ## ABOUT
 
-This is a corpus manually annotated tweets for the emotion detection task (using Plutchik’s eight basic emotions) produced as a result of my master thesis.
+This is a corpus of manually annotated tweets for the emotion detection task (using Plutchik’s eight basic emotions) produced as a result of my master thesis.
 
 
 ## CORPUS FORMAT
