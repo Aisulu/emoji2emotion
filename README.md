@@ -1,8 +1,9 @@
-##ABOUT
+## ABOUT
 
 This is a corpus manually annotated tweets for the emotion detection task (using Plutchik’s eight basic emotions) produced as a result of my master thesis.
 
-##CORPUS FORMAT
+
+## CORPUS FORMAT
 
 Corpus consists of {tweet_id: label} pairs.
 
@@ -10,7 +11,8 @@ Corpus consists of {tweet_id: label} pairs.
 
 Each **label** represents the emotions in a tweet in form of 8 dimensional vector for 8 emotion types. Each value in a vector is a float number between 0 and 3 representing the presence and intensity of each emotion, where 0 is «absent» and 3 is a «maximum intensity». The emotions in the vector are located in the following order: anger, disgust, fear, joy, sadness, surprise, anticipation, trust.
 
-##CORPUS RETRIEVAL
+
+## CORPUS RETRIEVAL
 
 The [labeled_tweets.txt](labeled_tweets.txt) file contains the corpus in human readable form.
 
