@@ -60,11 +60,13 @@ for key in labeled_tweets:
 ```
 ## CITATION
 
-Please, feel free to use the following BibTex citation if you shall use the corpus for publication purposes.
+Please, feel free to use the following BibTex citation if you shall use the corpus for publication purposes:
 
+```
 @article{rakhmetullina2018distant,
   title={Distant Supervision for Emotion Classification Task using emoji2emotion},
   author={Rakhmetullina, Aisulu and Trautmann, Dietrich and Groh, Georg},
   url={CEUR-WS.org/Vol-2130/paper6.pdf},
   year={2018}
 }
+```
